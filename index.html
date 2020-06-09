@@ -59,7 +59,9 @@
       <section class="hero overlay">
         <div class="hero-item">
           <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-          <a href="" class="button primary">Заказать услугу</a>
+          <button class="button primary" data-open-modal>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Преимущества-->
@@ -399,6 +401,19 @@
           </ul>
         </div>
       </section>
+      <!-- Модальное окно и форма "Заказать услугу" -->
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <button class="modal-close" data-close-modal>
+            <svg class="icon-modal-button">
+              <use href="./img/sprite.svg#icon-icon-btn-modal"></use>
+            </svg>
+          </button>
+          <form class="form">
+            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+          </form>
+        </div>
+      </div>
     </main>
     <!--Футер-->
     <footer>
@@ -466,5 +481,25 @@
       </div>
       <p class="copyringht container">2020 | Developed by GoIT Students</p>
     </footer>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector('[data-open-modal]'),
+        closeModalBtn: document.querySelector('[data-close-modal]'),
+        backdrop: document.querySelector('[data-backdrop]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      refs.backdrop.addEventListener('click', logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle('is-hidden');
+      }
+
+      function logBackdropClick() {
+        console.log('Это клик в бекдроп');
+      }
+    </script>
   </body>
 </html>
