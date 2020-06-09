@@ -1,0 +1,271 @@
+/* основной цвет + номер телефона в шапке #757575 */
+/* цвет акцент #2196F3 */
+/* белый #ffffff */
+/* цвет заголовков #212121 */
+/* футер rgba(255,255,255,0.6) */
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+}
+/* Навигация сайта */
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.link:hover,
+.studio :hover,
+.portfolio:hover,
+.contact:hover {
+  color: var(--accent-text-color);
+}
+
+/* Герой */
+
+.hero {
+  background-color: rgba(47, 48, 58, 0.8);
+  /* outline: 2px solid tomato; */
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.hero-item {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  text-align: center;
+}
+.hero-title {
+  width: 646px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 46px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+/* Фон с градиентом в секции герой */
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../img/studiya/header_img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button.primary {
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-flex;
+  min-width: 200px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button.primary:hover {
+  background-color: var(--primary-white-color);
+  color: var(--accent-text-color);
+}
+
+/* Наши преимущества */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.section h2 {
+  margin: 0 0 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.advant {
+  border-bottom: 1px solid #ececec;
+}
+.advant-element {
+  margin: 0px 0px 30px;
+}
+.advant-item {
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advant-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.advant-text {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.advant-element:not(:last-child) {
+  margin-right: 30px;
+}
+.icon-advant {
+  width: 70px;
+  height: 70px;
+}
+.list .advant-element {
+  /* width: 270px; */
+  width: calc((100% - 30px * 3) / 4);
+}
+.list .advant-list {
+  display: flex;
+}
+/* Чем мы занимаемся */
+.doing-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  border-radius: 0px 0px 4px 4px;
+  color: var(--primary-white-color);
+}
+.doing-element:not(:last-child) {
+  margin-right: 30px;
+}
+.list .doing-element {
+  position: relative;
+  width: calc((100% - 30px * 2) / 3);
+  border-radius: 0px 0px 4px 4px;
+}
+/* Наша команда */
+.team {
+  background-color: var(--accent-section-color);
+}
+.team-position {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  columns: var(--primary-text-color);
+}
+.team-title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.list .team-element {
+  background-color: var(--primary-white-color);
+  width: calc((100% - 30px * 3) / 4);
+  text-align: center;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.team-element:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list .slinks {
+  justify-content: space-evenly;
+  padding-bottom: 36px;
+}
+/* Добавляет фон для иконок соц.сетей в секции Команда */
+.slinks .slinks-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slinks .slinks-item:hover,
+.slinks .slinks-item:focus {
+  background-color: var(--accent-text-color);
+  transform: scale(1.3);
+}
+.slinks .icon-slink {
+  fill: var(--accent-icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slinks .slinks-item:hover .icon-slink {
+  fill: var(--primary-white-color);
+  transform: scale(1.3);
+}
+/* Клиенты */
+.klient-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.klient-element:not(:last-child) {
+  margin-right: 30px;
+}
+.klient-list .icon-klient {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.klient-list .klient-item:hover .icon-klient {
+  fill: var(--accent-text-color);
+  transform: scale(1.3);
+}
+.klient-element:hover .klient-item {
+  border-color: var(--accent-text-color);
+  transform: scale(1.3);
+}
+.klient-item:hover .icon-klient {
+  fill: var(--accent-text-color);
+  transform: scale(1.3);
+}
