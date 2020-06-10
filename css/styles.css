@@ -295,16 +295,19 @@ body {
   border-radius: 4px;
 }
 .form-text {
-  font-family: Roboto;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 30px;
 }
 .form {
   padding: 40px;
+}
+textarea {
+  resize: none;
 }
 .modal > .modal-close {
   position: absolute;
@@ -324,4 +327,57 @@ body {
   width: 11px;
   height: 11px;
   fill: black;
+}
+.label-text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+}
+.policy-link {
+  color: var(--accent-text-color);
+}
+.policy-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.modal-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  display: block;
+  padding: 10px 56px;
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--primary-white-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--accent-section-color);
+  color: var(--accent-text-color);
+}
+.form-comment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
