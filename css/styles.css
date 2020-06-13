@@ -277,10 +277,12 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  transform: scale(2);
 }
 .modal {
   position: absolute;
@@ -307,9 +309,6 @@ body {
 .form {
   padding: 40px;
 }
-textarea {
-  resize: none;
-}
 .modal > .modal-close {
   position: absolute;
   top: 0;
@@ -325,6 +324,10 @@ textarea {
   cursor: pointer;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--accent-text-color);
+}
 .icon-modal-button {
   width: 11px;
   height: 11px;
@@ -335,7 +338,7 @@ textarea {
   top: 12px;
   left: 42px;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.15;
   letter-spacing: 0.01em;
   color: var(--title-text-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -387,6 +390,8 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  font-size: 14px;
+  outline-color: var(--accent-text-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:hover,
@@ -423,10 +428,12 @@ textarea {
   height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
+  resize: none;
 }
 .icon-person {
   width: 18px;
   height: 18px;
+  vertical-align: middle;
 }
 .icon-input {
   position: absolute;

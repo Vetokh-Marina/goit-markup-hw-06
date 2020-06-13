@@ -330,14 +330,15 @@
         <div class="footer-subscription">
           <p class="slikns-text">подпишитесь на рассылку</p>
           <div class="sub-container">
-            <input type="text" class="email-input" placeholder="E-mail" />
-            <!-- <p class="email-input">E-mail</p> -->
-            <a href="#" class="button-secondary"
-              >Подписаться
-              <svg class="icon-button" width="24" height="24">
-                <use href="./img/symbol-defs.svg#icon-icon_send"></use>
-              </svg>
-            </a>
+            <form class="js-form" id="footer-form">
+              <input type="email" class="email-input" placeholder="E-mail" />
+              <button type="submit" class="button-secondary">
+                Подписаться
+                <svg class="icon-button" width="24" height="24">
+                  <use href="./img/symbol-defs.svg#icon-icon_send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>

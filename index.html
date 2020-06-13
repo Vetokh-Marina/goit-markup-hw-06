@@ -409,12 +409,12 @@
               <use href="./img/symbol-defs.svg#icon-icon-btn-modal"></use>
             </svg>
           </button>
-          <form class="form js-form">
+          <form class="form js-form" id="modal-form">
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
             <div class="form-container">
-              <label for="name" class="form-field">
+              <label class="form-field">
                 <input
-                  type="name"
+                  type="text"
                   name="name"
                   class="form-input"
                   placeholder=" "
@@ -427,9 +427,9 @@
                 </span>
               </label>
 
-              <label for="name" class="form-field">
+              <label class="form-field">
                 <input
-                  type="text"
+                  type="tel"
                   name="tel"
                   class="form-input"
                   placeholder=" "
@@ -442,9 +442,9 @@
                 </span>
               </label>
 
-              <label for="name" class="form-field">
+              <label class="form-field">
                 <input
-                  type="text"
+                  type="email"
                   name="mail"
                   class="form-input"
                   placeholder=" "
@@ -457,7 +457,7 @@
                 </span>
               </label>
 
-              <label for="text" class="form-field">
+              <label class="form-field">
                 <textarea
                   name="comment"
                   placeholder=" "
@@ -471,7 +471,13 @@
                 <input type="checkbox" name="policy" class="policy-checkbox" />
                 <span class="icon-checkbox"></span>
                 Согласен с рассылкой и принимаю
-                <a href="" class="policy-text policy-link">Условия договора</a>
+                <a
+                  href=""
+                  class="policy-text policy-link"
+                  target="_blank"
+                  href="#"
+                  >Условия договора</a
+                >
               </label>
             </div>
             <button type="submit" class="modal-button">Отправить</button>
@@ -533,13 +539,15 @@
         <div class="footer-subscription">
           <p class="slikns-text">подпишитесь на рассылку</p>
           <div class="sub-container">
-            <input type="text" class="email-input" placeholder="E-mail" />
-            <a href="#" class="button-secondary">
-              Подписаться
-              <svg class="icon-button" width="24" height="24">
-                <use href="./img/symbol-defs.svg#icon-icon_send"></use>
-              </svg>
-            </a>
+            <form class="js-form" id="footer-form">
+              <input type="email" class="email-input" placeholder="E-mail" />
+              <button type="submit" class="button-secondary">
+                Подписаться
+                <svg class="icon-button" width="24" height="24">
+                  <use href="./img/symbol-defs.svg#icon-icon_send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
