@@ -295,7 +295,7 @@ footer {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-white-color);
   font-size: 16px;
   line-height: 1.87;
   display: inline-block;
@@ -307,6 +307,9 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--foot-primery-color);
   border-image: initial;
+}
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 .copyringht {
   color: rgba(255, 255, 255, 0.4);
